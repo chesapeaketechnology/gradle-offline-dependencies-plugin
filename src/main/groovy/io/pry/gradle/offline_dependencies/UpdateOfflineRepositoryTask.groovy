@@ -17,6 +17,7 @@ import org.gradle.api.artifacts.component.ModuleComponentIdentifier
 import org.gradle.api.artifacts.result.UnresolvedArtifactResult
 import org.gradle.api.internal.artifacts.DefaultModuleIdentifier
 import org.gradle.api.tasks.Input
+import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
 import org.gradle.internal.component.external.model.DefaultModuleComponentIdentifier
 import org.gradle.ivy.IvyDescriptorArtifact
@@ -32,6 +33,7 @@ import static io.pry.gradle.offline_dependencies.Utils.addToMultimap
 
 class UpdateOfflineRepositoryTask extends DefaultTask {
 
+    @Internal
     def EMPTY_DEPENDENCIES_ARRAY = new Dependency[0]
 
     @Input

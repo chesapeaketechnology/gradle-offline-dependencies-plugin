@@ -7,7 +7,7 @@ plugins {
 apply plugin: 'groovy'
 
 group = 'gov.chesapeaketechnology'
-version = '0.3.3'
+version = '0.3.4'
 description = 'Store project dependencies alongside your code for reproducible offline builds'
 
 repositories {
@@ -16,7 +16,7 @@ repositories {
 }
 
 ext {
-  mavenVersion = '3.3.9'
+  mavenVersion = '3.6.0'
   jarjarVersion = '1.2.1'
 
   thirdpartyLibsDir = "$project.rootDir/libs/"

@@ -11,3 +11,4 @@ gradle-app.setting
 /.settings/
 .DS_Store
 Thumbs.db
+libs/
